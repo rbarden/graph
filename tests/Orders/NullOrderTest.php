@@ -22,9 +22,7 @@ class NullOrderTest extends TestCase
 
     public function testReturnsEmptyArrayOnEmptyGraph(): void
     {
-        $graph = new Graph();
-
-        $result = (new NullOrder())->find($graph);
+        $result = (new NullOrder())->find(new Graph());
 
         self::assertSame([], $result);
     }

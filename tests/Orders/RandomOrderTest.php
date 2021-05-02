@@ -24,9 +24,7 @@ class RandomOrderTest extends TestCase
 
     public function testReturnsEmptyArrayOnEmptyGraph(): void
     {
-        $graph = new Graph();
-
-        $result = (new RandomOrder())->find($graph);
+        $result = (new RandomOrder())->find(new Graph());
 
         self::assertSame([], $result);
     }

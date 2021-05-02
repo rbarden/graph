@@ -28,9 +28,7 @@ class TopologicalSortOrderTest extends TestCase
 
     public function testReturnsEmptyArrayOnEmptyGraph(): void
     {
-        $graph = new Graph();
-
-        $result = (new TopologicalSortOrder())->find($graph);
+        $result = (new TopologicalSortOrder())->find(new Graph());
 
         self::assertSame([], $result);
     }

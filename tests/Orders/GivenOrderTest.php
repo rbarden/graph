@@ -23,9 +23,7 @@ class GivenOrderTest extends TestCase
 
     public function testReturnsEmptyArrayOnEmptyGraph(): void
     {
-        $graph = new Graph();
-
-        $result = (new GivenOrder([]))->find($graph);
+        $result = (new GivenOrder([]))->find(new Graph());
 
         self::assertSame([], $result);
     }
@@ -34,8 +32,6 @@ class GivenOrderTest extends TestCase
     {
         $this->expectException(UnknownVertexException::class);
 
-        $graph = new Graph();
-
-        (new GivenOrder([1, 2, 3]))->find($graph);
+        (new GivenOrder([1, 2, 3]))->find(new Graph());
     }
 }
