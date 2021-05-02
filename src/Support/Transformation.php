@@ -6,7 +6,7 @@ namespace Rbarden\Graph\Support;
 
 use Rbarden\Graph\Base\Graph;
 
-class Transformation
+final class Transformation
 {
     public static function converse(Graph $graph): Graph
     {

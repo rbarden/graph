@@ -9,7 +9,7 @@ use Rbarden\Graph\Base\Order;
 use Rbarden\Graph\Base\Visitor;
 use Rbarden\Graph\Exceptions\UnknownOrderException;
 
-class Traversal
+final class Traversal
 {
     private Graph $graph;
     private Order $order;

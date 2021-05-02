@@ -7,7 +7,7 @@ namespace Rbarden\Graph\Orders;
 use Rbarden\Graph\Base\Graph;
 use Rbarden\Graph\Base\Order;
 
-class NullOrder implements Order
+final class NullOrder implements Order
 {
     public function find(Graph $graph): array
     {

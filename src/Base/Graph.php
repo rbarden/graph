@@ -68,15 +68,4 @@ class Graph
 
         return $this->adjacencyList[$vertex];
     }
-
-//    public function walk(array $vertices, Visitor $visitor)
-//    {
-//        foreach($vertices as $vertex)
-//        {
-//            if (! isset($this->adjacencyList[$vertex])) {
-//                throw new UnknownVertexException("Cannot visit unknown vertex [$vertex]");
-//            }
-//            $visitor->visit($vertex, $this->nodeItems[$vertex]);
-//        }
-//    }
 }

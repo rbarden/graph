@@ -7,7 +7,7 @@ namespace Rbarden\Graph\Orders;
 use Rbarden\Graph\Base\Graph;
 use Rbarden\Graph\Base\Order;
 
-class RandomOrder implements Order
+final class RandomOrder implements Order
 {
     public function find(Graph $graph): array
     {

@@ -6,7 +6,7 @@ namespace Rbarden\Graph\Support;
 
 use Rbarden\Graph\Base\Graph;
 
-class Invariant
+final class Invariant
 {
     public static function getOutDegrees(Graph $graph): array
     {
