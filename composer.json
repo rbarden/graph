@@ -2,6 +2,7 @@
     "name": "rbarden/graph",
     "type": "library",
     "license": "MIT",
+    "description": "Yet another graph library for php",
     "autoload": {
         "psr-4": {
             "Rbarden\\Graph\\": "src"
@@ -11,6 +12,9 @@
         "psr-4": {
             "Rbarden\\Graph\\Tests\\": "tests"
         }
+    },
+    "require": {
+        "php": "^8.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^9"
